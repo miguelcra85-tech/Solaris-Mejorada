@@ -1,0 +1,521 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Solaris | Innovación Sustentable Monterrey</title>
+<meta content="Protege tu piel y el planeta con Solaris. Innovación sustentable diseñada en Monterrey para climas extremos. Protectores solares biodegradables y tecnología eco-friendly." name="description">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c2c8c1",
+                      "surface-container-high": "#eae7e7",
+                      "tertiary": "#304329",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary-fixed": "#c8ebd0",
+                      "tertiary-container": "#465b3f",
+                      "outline": "#727972",
+                      "primary": "#264431",
+                      "on-tertiary-container": "#bad1ae",
+                      "on-error": "#ffffff",
+                      "surface-container": "#f0eded",
+                      "secondary": "#994618",
+                      "on-primary-fixed": "#022110",
+                      "inverse-primary": "#accfb5",
+                      "inverse-on-surface": "#f3f0ef",
+                      "surface": "#fcf9f8",
+                      "tertiary-fixed": "#d2eac5",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#7a3000",
+                      "secondary-fixed": "#ffdbcc",
+                      "surface-dim": "#dcd9d9",
+                      "on-surface-variant": "#424843",
+                      "on-tertiary-fixed": "#0e2009",
+                      "on-primary-container": "#b0d3b8",
+                      "surface-container-low": "#f6f3f2",
+                      "tertiary-fixed-dim": "#b6cdaa",
+                      "background": "#fcf9f8",
+                      "on-tertiary": "#ffffff",
+                      "secondary-container": "#ff9560",
+                      "inverse-surface": "#303030",
+                      "on-error-container": "#93000a",
+                      "surface-variant": "#e5e2e1",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#752d00",
+                      "primary-fixed-dim": "#accfb5",
+                      "on-secondary-fixed": "#351000",
+                      "error-container": "#ffdad6",
+                      "primary-container": "#3d5c47",
+                      "surface-tint": "#466550",
+                      "on-background": "#1b1c1c",
+                      "surface-bright": "#fcf9f8",
+                      "on-surface": "#1b1c1c",
+                      "on-tertiary-fixed-variant": "#384c31",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#ffb694",
+                      "on-primary-fixed-variant": "#2f4d39",
+                      "on-primary": "#ffffff",
+                      "arena": "#EFE6DA",
+                      "solaris-orange": "#D97745"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "xl": "80px",
+                      "xs": "4px",
+                      "base": "8px",
+                      "lg": "48px",
+                      "md": "24px",
+                      "sm": "12px"
+              },
+              "fontFamily": {
+                      "headline-xl": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "label-md": ["Inter"],
+                      "headline-xl-mobile": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "display-lg-mobile": ["Inter"],
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 40px rgba(61, 92, 71, 0.08);
+        }
+        .masonry {
+            columns: 1;
+            gap: 1.5rem;
+        }
+        @media (min-width: 768px) { .masonry { columns: 2; } }
+        @media (min-width: 1024px) { .masonry { columns: 3; } }
+        
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        @keyframes satinFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .satin-black {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #050505 50%, #1a1a1a 75%, #0a0a0a 100%);
+            background-size: 400% 400%;
+            animation: satinFlow 15s ease infinite;
+        }
+    </style>
+</head>
+<body class="bg-arena font-body-md text-on-surface selection:bg-solaris-orange selection:text-white overflow-x-hidden">
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 transition-all duration-500 ease-in-out border-b border-transparent" id="main-nav">
+<div class="max-w-container-max mx-auto px-md py-base flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="h-10 w-10 rounded-full overflow-hidden bg-white flex items-center justify-center">
+<img alt="Solaris Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOWLHTuv8QaxeNENBD5n782UaoTxF9wcDI7F2gq1u2Rbek-FZl04EA0Xf6ciX8PgHNwbmd2GmqXRPrrtsniQzanrJ8VtZj-EvKwDqBAJ9i4JY7GhwWQoPPYJtOw27kreAztz7qFg3nMFpenzf3OGRT4K3izyqRvgph2YhKiCVnEr8Gbyyt_rVGw5hL1tJDbBicCRJKBrmU1nbU4Yo4gAqj__eNk78iQdCUzVjZqp83CzIFigKKOpVIHg65zxyLolmYXYCuxhoigI6n">
+</div>
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Solaris</span>
+</div>
+<nav class="hidden md:flex gap-md items-center">
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="#productos">Productos</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="#beneficios">Beneficios</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="#nosotros">Nosotros</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="#galeria">Galería</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="#contacto">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="bg-primary text-white px-6 py-2 rounded-lg font-label-md hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 shadow-lg shadow-primary/20" href="#">
+                Comprar Ahora
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0 parallax-bg" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCEtTSTFzA0GcumoTgIInZHfRUJRh1mQA4rusw5jEq0t2S-z6-qA5S1nicw7mu6pHX9RDCa_QRHYTGk_bhtXVHOe4Lbtu4L4-zUiA3axt2cvvsKPlI_3c-I7eUY7EBvYypCiPigyfHTrVV4gOWD4glvQSnEGeWkH1caIsiL0NmxJRKWsSg6EcXgL58AO47Vsustk3YyKKHzHuatyAqatK2j3XFL8K7z1ZNzigljCLJAVk0kXnsG3FLnm9PBbL4MlZJn4ulyZFKOAtYk&quot;);">
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<div class="mb-8 inline-block animate-bounce-slow">
+<div class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden bg-white flex items-center justify-center drop-shadow-2xl">
+<img alt="Solaris Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOWLHTuv8QaxeNENBD5n782UaoTxF9wcDI7F2gq1u2Rbek-FZl04EA0Xf6ciX8PgHNwbmd2GmqXRPrrtsniQzanrJ8VtZj-EvKwDqBAJ9i4JY7GhwWQoPPYJtOw27kreAztz7qFg3nMFpenzf3OGRT4K3izyqRvgph2YhKiCVnEr8Gbyyt_rVGw5hL1tJDbBicCRJKBrmU1nbU4Yo4gAqj__eNk78iQdCUzVjZqp83CzIFigKKOpVIHg65zxyLolmYXYCuxhoigI6n">
+</div>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white drop-shadow-lg mb-4 font-extrabold tracking-tighter">
+            Protege tu piel.<br>Protege el planeta.
+        </h1>
+<p class="text-body-lg text-white mb-8 max-w-2xl mx-auto font-medium drop-shadow-md">
+            Innovación tecnológica nacida en el corazón de Monterrey para desafiar los climas más extremos sin comprometer el ecosistema.
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-solaris-orange text-white px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform ambient-shadow" href="#productos">Explorar Colección</a>
+<a class="glass-card px-8 py-4 rounded-lg font-bold text-lg text-primary hover:bg-white/90 transition-all border border-white/50" href="#video">Ver en Acción</a>
+</div>
+</div>
+</section>
+<!-- Innovative Products -->
+<section class="py-xl px-md bg-white" id="productos">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="text-solaris-orange font-label-md tracking-widest uppercase">Tecnología de Vanguardia</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mt-2">Productos Destacados</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="glass-card p-4 rounded-xl ambient-shadow hover:-translate-y-2 transition-transform duration-500">
+<div class="aspect-square rounded-lg overflow-hidden bg-arena mb-6 flex items-center justify-center">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMDu9GPjHuMlCmJWXcSTbsvYaawjpe7_I2zs7iN-W28c1XhIiXtF_HaRvLJSeQiZogBZf0BH4whezJvLqm8qeFgPUUP0YNdsPW3VxzI0lRLvbx9LbPrjh8M71_nrYMU07D1LvWojOMMtgPbP5PMjqAeWJKClD8f7lnZfLZs9fj36Krn0YWthFmLW9EfOYVk6tt9AOiNqSBqFIyMA81QWzErAgdjYpTGHoBLm5GAzBVAQN6vu3rSRNm7Noa6-lytbcdmzJNqXJ-3HNb');"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Protector Solar en Barra SPF 50+</h3>
+<p class="text-on-surface-variant mb-4">Protección premium de amplio espectro con una fórmula 100% biodegradable, diseñada para resistir las condiciones más extremas.</p>
+<details class="group">
+<summary class="flex items-center gap-1 text-solaris-orange font-bold cursor-pointer group-hover:underline">
+                        Más información
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+</summary>
+<div class="mt-4 p-4 bg-arena/50 rounded-lg text-sm text-on-surface-variant leading-relaxed">
+                        Nuestra fórmula en barra permite una aplicación precisa y limpia. No deja sensación grasosa y es ideal para deportistas en climas de alto rendimiento como el de Monterrey.
+                    </div>
+</details>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-4 rounded-xl border-2 border-primary/10 ambient-shadow hover:-translate-y-2 transition-transform duration-500">
+<div class="aspect-square rounded-lg overflow-hidden bg-arena mb-6 flex items-center justify-center">
+<img alt="Ventilador Ecológico" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdj65zfi5rRuTP_SHg3Ga_TQEgoLsnIeRWhqWxvZ5oSHd1hjLt5llQkp5HcoSP-I07fjBQSYI13LyCrtGqtYBF8UgvTPuftjy1YGTV5I48pwf3jTHoW8yBj8vTiTwctWPE_royjmqqQJSoWmBZvksPy8YCnhoR5JRByp7NZexwchxMx65uvplGhwOPw_5l-iumVIuh1pNEHgtOpQYnjeNCnDH_s3O9mdBV6SI-PKl2bz9i6pYTWUDIXe4Y9JuKydemvrTav7WDvySG6m8">
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Ventilador Ecológico</h3>
+<p class="text-on-surface-variant mb-4">Sistema de enfriamiento personal de bajo consumo y materiales reciclados.</p>
+<details class="group">
+<summary class="flex items-center gap-1 text-solaris-orange font-bold cursor-pointer group-hover:underline">
+                        Más información
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+</summary>
+<div class="mt-4 p-4 bg-arena/50 rounded-lg text-sm text-on-surface-variant leading-relaxed">
+                        Diseñado ergonómicamente para el cuello, utiliza tecnología de flujo de aire laminar para reducir la temperatura percibida hasta 10°C sin ruidos molestos.
+                    </div>
+</details>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-4 rounded-xl ambient-shadow hover:-translate-y-2 transition-transform duration-500">
+<div class="aspect-square rounded-lg overflow-hidden bg-arena mb-6 flex items-center justify-center">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxpzmVDvVNgG2IDf-rJjaPSNcOpDVdS5Nr8i2Tto5iJVu3GMZ8p4gh_NIz01uelF-FTRz3bE8-dSf5xfSRYGVdGkmfL2jmRSRzWlLxNvzpUQsCnOrHcEgaRrLWPyqox1Wlio119AjEB_yhlMjR1WOITTCkYACFeoJ5Cvco5U9m30mfXsNV3XWeqWoKzsVEE4EZxQvONRoLua0MNXgZi4Un51Q2fBQO3J7R3C-DQ3Xw7riYoJzKRYBD9ZQYN7XCFfVLKocNDjNNDAAh');"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Edición Especial Limón</h3>
+<p class="text-on-surface-variant mb-4">Protección premium con un toque refrescante de limón. Fórmula biodegradable diseñada para climas extremos.</p>
+<details class="group">
+<summary class="flex items-center gap-1 text-solaris-orange font-bold cursor-pointer group-hover:underline">
+                        Más información
+                        <span class="material-symbols-outlined text-sm">expand_more</span>
+</summary>
+<div class="mt-4 p-4 bg-arena/50 rounded-lg text-sm text-on-surface-variant leading-relaxed">
+                        Nuestra edición especial de limón combina la máxima protección SPF 50+ con aceites esenciales naturales que refrescan tu piel durante la exposición solar intensa.
+                    </div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Section -->
+<section class="py-xl bg-tertiary" id="video">
+<div class="max-w-container-max mx-auto px-md">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-white">Conoce Solaris en acción</h2>
+<p class="text-on-tertiary-container mt-4">Tecnología probada bajo el sol más intenso.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Video 1 -->
+<div class="group relative overflow-hidden rounded-2xl ambient-shadow">
+<video class="w-full aspect-video object-cover cursor-pointer" controls="" loop="" onclick="this.paused ? this.play() : this.pause();" preload="auto">
+<source src="https://res.cloudinary.com/hw31kdln/video/upload/v1783547864/Ventilador-Eco-friendly_nlfd1x.webm" type="video/webm">
+                    Tu navegador no soporta videos.
+                </video>
+<div class="p-6 bg-tertiary-container/50 backdrop-blur-md">
+<h4 class="text-white font-headline-md mb-2">Ventilador Ecológico</h4>
+<p class="text-white/70 text-sm">Pruebas de eficiencia energética y flujo térmico.</p>
+</div>
+</div>
+<!-- Video 2 -->
+<div class="group relative overflow-hidden rounded-2xl ambient-shadow">
+<video class="w-full aspect-video object-cover cursor-pointer" controls="" loop="" onclick="this.paused ? this.play() : this.pause();" preload="auto">
+<source src="https://res.cloudinary.com/hw31kdln/video/upload/v1783554399/video-de-protector_yh3baz.webm" type="video/webm">
+                    Tu navegador no soporta videos.
+                </video>
+<div class="p-6 bg-tertiary-container/50 backdrop-blur-md">
+<h4 class="text-white font-headline-md mb-2">Protector Solar</h4>
+<p class="text-white/70 text-sm">Demostración de absorción y resistencia al agua.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits -->
+<section class="py-xl bg-arena" id="beneficios">
+<div class="max-w-container-max mx-auto px-md">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-base md:gap-lg">
+<div class="text-center p-6 glass-card rounded-2xl ambient-shadow">
+<span class="material-symbols-outlined text-4xl text-solaris-orange mb-4" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h3 class="font-bold text-primary mb-2">100% Orgánico</h3>
+<p class="text-sm text-on-surface-variant">Ingredientes naturales certificados de origen ético.</p>
+</div>
+<div class="text-center p-6 glass-card rounded-2xl ambient-shadow">
+<span class="material-symbols-outlined text-4xl text-solaris-orange mb-4" style="font-variation-settings: 'FILL' 1;">biotech</span>
+<h3 class="font-bold text-primary mb-2">Biodegradable</h3>
+<p class="text-sm text-on-surface-variant">Fórmulas que no dañan los arrecifes ni suelos.</p>
+</div>
+<div class="text-center p-6 glass-card rounded-2xl ambient-shadow">
+<span class="material-symbols-outlined text-4xl text-solaris-orange mb-4" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<h3 class="font-bold text-primary mb-2">Clima Extremo</h3>
+<p class="text-sm text-on-surface-variant">Diseñado para el calor de Monterrey.</p>
+</div>
+<div class="text-center p-6 glass-card rounded-2xl ambient-shadow">
+<span class="material-symbols-outlined text-4xl text-solaris-orange mb-4" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h3 class="font-bold text-primary mb-2">Local</h3>
+<p class="text-sm text-on-surface-variant">Orgullosamente diseñado en Monterrey.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us -->
+<section class="py-xl px-md bg-white overflow-hidden" id="nosotros">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-lg">
+<div class="relative">
+<div class="rounded-3xl overflow-hidden ambient-shadow h-[500px]">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCBeJORF9_Zq37alltrLbLOrAzw0xMOfDhwa5v5TGbatlL_7I9naIcNYsHX6UBujblMCKD74rVlTOQU3CQ3jUbOlOQwj5F_YpF8Qo8QwwkqZuXYRa1YD1xS_iR_FuoGbkWCz-PUClx1tQ3RZhhlB4-ASBuaTZceeXp6T7Nf1AtHnt3dIL0d7sjyctQGZfCU3qDqP2SEaJOV2o1uOy2JU-eZppxnXkkkgO_QRIhCkmDN-wVConj2jUixqz0SO03aRKh4KSdHLr06s6I')"></div>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded-2xl hidden md:block">
+<p class="text-headline-md font-bold italic">"Sustentabilidad es progreso."</p>
+</div>
+</div>
+<div>
+<span class="text-solaris-orange font-label-md tracking-widest uppercase">Nuestra Historia</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mt-2 mb-6">Sobre Solaris</h2>
+<div class="space-y-4 text-body-lg text-on-surface-variant">
+<p class="">Solaris nació de la necesidad de encontrar soluciones reales para el estilo de vida dinámico y caluroso de Monterrey. Observamos cómo el sol implacable desgastaba no solo nuestra piel, sino también el ecosistema local.</p>
+<p class="">Nuestra misión es simple pero ambiciosa: crear productos de protección y confort de clase mundial que dejen una huella mínima en el planeta. Combinamos ingeniería local con biotecnología avanzada.</p>
+<p class="">Cada producto que diseñamos es una promesa de calidad y un compromiso con las futuras generaciones de nuestra ciudad y el mundo.</p>
+</div>
+<button class="mt-8 flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all group">
+                Conoce más de nuestro equipo
+                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="py-xl px-md bg-arena" id="galeria">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary">Estilo de Vida Solaris</h2>
+</div>
+<div class="masonry">
+<div class="mb-6 rounded-xl overflow-hidden group relative cursor-pointer">
+<img class="w-full h-auto hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9kK7I2OnGuKA3xfm1s9xlLTJSCTfTskzq4VYmgnDuldnxk3nH0yixSNFg_vQZpqcGfTnPkJJ1XG7YA9wm-yENWJnEvC0TsMuuAHt1NvlJJfBnaK7a5d6jPXKU-6mBCSnMCyh9mZO2kbZNe9lJwmdmGOWiG_u_I3lxZSTqjFeuR9RoaRSGr747ZUhOzhgthJVJQWtOzdDJ68YDoq1rmJeBvMMfKNcMBMNjc-smabzX5aPO6CdOWh-eSKoQo2EFynJRcilyrEwqrTna">
+</div>
+<div class="mb-6 rounded-xl overflow-hidden group relative cursor-pointer">
+<img class="w-full h-auto hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP0mhtZGkDvOnoMUSbXuLI_8gaG2X0oqQ-zJTex1rhtakk1N2TswX8zN6OtMDYmuclTJfujtBS46s8fLL9r6Ra2JnvgLjN5VwIZrXvlOByVLS9TCpcEdennNMQ_K1-8ozXRtVE4b00KCtrW8yafzbovVzvnfpv3UvQyAxMB3D3Jlh4qV8l28L9UuafCSx2PvJjy6Xm6ASgEyxWB9P0m1_Uz8lkrN63qjKPRgiwfrn79iAws0eKcH64Oa6SpXFtk519lhd5TveupTL">
+</div>
+<div class="mb-6 rounded-xl overflow-hidden group relative cursor-pointer">
+<img class="w-full h-auto hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzmvhxVK0v_0PsxK1-Ryr0elAvdLKqngn1J23zgfCPA0H0VwP6AM-Dud_NsJMhrhDd4R6XrbcyK7pbWEw8vj0Kb8T2k7FCgHC89rOQw1mL7qV1Ac01smykkvTUN7T88Wtce6f0zdXfjGpfP0Lo3WGcqXZGtd5QUYOovXFv01AtnopfedBsbuoVlc8-gyfvoi5IXGOaPWmIs9MRL84A3-ufj1wX3vvDTq8gLCZYobeLZQ2drtUbb1b5guG64EqTBHX_ifQIKXJHxCia">
+</div>
+<div class="mb-6 rounded-xl overflow-hidden group relative cursor-pointer">
+<img class="w-full h-auto hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApsNczUcDxFYbPdJkgfG3kw8oCt3GjTXK9NZV4QKMYCmayFIaNs1CEmAyn7cDkvW98B3RCPTM086WC9z092q52UqcrqFB-dVPs9fgPttXmGD16nRwIi79S1J3rPDpSvxJ8MeNkqfG0aM8YUvk5SFqnf9FJZ3sgxhJfemzQ7ya6ldrk-Y2Nx09B2XnhJh4j1zd6d9YP3VrgjK64ap8nkIPMCS-UKT-sLszzG_0H-c0a2kUV8lsWONvVpk_QaEbUIotOYmDTfL2SGFMp">
+</div>
+<div class="mb-6 rounded-xl overflow-hidden group relative cursor-pointer">
+<img class="w-full h-auto hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD7yTMvBSJKpHBM6SHCt1GOVdH-cwPS_2iX0_MMzd6mU0-xWjtqW_Nbo9v54sIozTBylPaZBBEX9ujr432OqKar4S9kHdzIRCPoalJbicWUQ_vInWmm3JQKf5eyWk3cVNjKszCmuvV3l9FBuHjE4hEvHE8rrRb7VDNVBJbTFFwyrV0gjQldmDoBK728Ov4t73VFwWCjbfewrB3xDpjwGsJIsim5sR1caenWXnTP5Eytm2qd7SdhEX2HFDLGhaVrhMPOrinXTyRGC0q">
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="h-[450px] relative">
+<iframe allowfullscreen="" class="w-full h-full grayscale contrast-125 opacity-80" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115043.903823489!2d-100.389146!3d25.686614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6504145b!2sMonterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" style="border:0;"></iframe>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-8 glass-card rounded-2xl text-center ambient-shadow pointer-events-none">
+<h3 class="text-primary font-bold text-xl">Visitanos en Monterrey</h3>
+<p class="text-on-surface-variant text-sm">Prueba nuestra línea completa en showroom.</p>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl px-md bg-white" id="contacto">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-xl text-headline-xl text-primary">Estamos para escucharte</h2>
+<p class="text-on-surface-variant mt-4">¿Tienes dudas sobre nuestros productos o envíos?</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-arena flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h4 class="font-bold">Email</h4>
+<p class="text-on-surface-variant">hola@solaris.mx</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-arena flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-bold">WhatsApp</h4>
+<a class="text-solaris-orange hover:underline" href="http://wa.me/525583335581">+52 55 8333 5581</a>
+</div>
+</div>
+<div class="p-6 bg-arena rounded-2xl">
+<h4 class="font-bold mb-2">Horario de Atención</h4>
+<p class="text-sm text-on-surface-variant">Lunes a Viernes: 9:00 AM - 7:00 PM<br>Sábados: 10:00 AM - 2:00 PM</p>
+</div>
+</div>
+<form class="space-y-4">
+<input class="w-full px-4 py-3 rounded-lg border-arena bg-arena/20 focus:border-primary focus:ring-primary transition-all" placeholder="Nombre completo" type="text">
+<input class="w-full px-4 py-3 rounded-lg border-arena bg-arena/20 focus:border-primary focus:ring-primary transition-all" placeholder="Correo electrónico" type="email">
+<textarea class="w-full px-4 py-3 rounded-lg border-arena bg-arena/20 focus:border-primary focus:ring-primary transition-all" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+<button class="w-full bg-primary text-white py-4 rounded-lg font-bold hover:bg-primary/90 transition-all shadow-lg" type="submit">Enviar mensaje</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Promotional Creator Box -->
+<section class="py-lg px-md bg-arena/20">
+<div class="max-w-container-max mx-auto">
+<div class="satin-black p-8 rounded-3xl shadow-2xl flex flex-col md:flex-row items-center gap-8 border border-white/10 animate-fade-in-up relative overflow-hidden"><div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full animate-[shine_3s_infinite]" style="animation: 3s ease 0s infinite normal none running shine;"></div><style>@keyframes shine { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }</style>
+<div class="flex-shrink-0">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl bg-white/5 backdrop-blur-sm p-4 border border-white/10 flex items-center justify-center overflow-hidden">
+<img alt="MigueStrategy Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLsrRLwpnLe1Bo7nkvI-K4xE86vr0Y-bicTUFaWZVSRQbjJWuGBjOGN3F5OT5kRerTzfopR6ywF_Nbxh1qekDNUzkdb4g2vIRvszxP9Bq3SSZB2QFQR4UGp-ZdsoLbXDtU5Jn3CiyW0Vrrr3L755u9ef-MTby7DrBuZyiqd3nd3sP3MJC8F0fzaBGa3lr-2291Syklzc-ILXlvRYNaj1fWiF-5lbkScqrJEMG75DwVFoBgV4ttXIWqe0S18">
+</div>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h3 class="text-white mb-4 text-4xl"><span class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent font-extrabold">Migue</span><span class="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent inline-block scale-110"><span class="inline-block scale-y-125 italic">S</span>trategy</span></h3>
+<p class="text-white/80 leading-relaxed max-w-2xl text-xl">
+            MigueStrategy potencia tu negocio con estrategias digitales de alto impacto. SEO, marketing y publicidad diseñados para maximizar resultados y crecimiento sostenible. Cada clic se convierte en oportunidad, cada campaña en crecimiento real.
+          </p>
+</div>
+<div class="flex-shrink-0">
+<a class="bg-white text-black px-8 py-4 rounded-xl font-label-md hover:bg-white/90 transition-all shadow-lg flex items-center gap-2 group whitespace-nowrap" href="mailto:miguel.avila.h@uinenlinea.mx">
+            Contactar Estratega
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary py-xl text-white">
+<div class="max-w-container-max mx-auto px-md grid grid-cols-1 md:grid-cols-4 gap-lg">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="h-10 w-10 rounded-full overflow-hidden bg-white flex items-center justify-center">
+<img alt="Solaris Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOWLHTuv8QaxeNENBD5n782UaoTxF9wcDI7F2gq1u2Rbek-FZl04EA0Xf6ciX8PgHNwbmd2GmqXRPrrtsniQzanrJ8VtZj-EvKwDqBAJ9i4JY7GhwWQoPPYJtOw27kreAztz7qFg3nMFpenzf3OGRT4K3izyqRvgph2YhKiCVnEr8Gbyyt_rVGw5hL1tJDbBicCRJKBrmU1nbU4Yo4gAqj__eNk78iQdCUzVjZqp83CzIFigKKOpVIHg65zxyLolmYXYCuxhoigI6n">
+</div>
+<span class="font-headline-md text-headline-md font-bold tracking-tight">Solaris</span>
+</div>
+<p class="text-sm text-white/70 leading-relaxed">
+                Sustentabilidad y alta tecnología desde el norte de México. Protegiendo lo que importa.
+            </p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Navegación</h4>
+<ul class="space-y-3 text-sm text-white/70">
+<li class=""><a class="hover:text-solaris-orange transition-colors" href="#inicio">Inicio</a></li>
+<li class=""><a class="hover:text-solaris-orange transition-colors" href="#productos">Productos</a></li>
+<li class=""><a class="hover:text-solaris-orange transition-colors" href="#beneficios">Beneficios</a></li>
+<li class=""><a class="hover:text-solaris-orange transition-colors" href="#nosotros">Nosotros</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Legal</h4>
+<ul class="space-y-3 text-sm text-white/70">
+<li class=""><a class="hover:text-solaris-orange transition-colors" href="#">Privacidad</a></li>
+<li class=""><a class="hover:text-solaris-orange transition-colors" href="#">Términos</a></li>
+<li class=""><a class="hover:text-solaris-orange transition-colors" href="#">Soporte</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Síguenos</h4>
+<div class="flex gap-4"><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-black transition-all group" title="TikTok"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.31-.75.42-1.24 1.17-1.35 1.97-.31 1.44.54 2.86 1.98 3.13.59.1 1.21.01 1.77-.21.53-.22.93-.63 1.21-1.11.4-.58.56-1.27.55-1.97.03-4.69.03-9.39.03-14.08z"></path></svg></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[linear-gradient(45deg,#405DE6,#833AB4,#FD1D1D,#F56040)] transition-all group" title="Instagram"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#1877F2] transition-all group" title="Facebook"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#0077B5] transition-all group" title="LinkedIn"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path></svg></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FF0000] transition-all group" title="YouTube"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a></div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-md mt-16 pt-base border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+<p class="">© 2024 Solaris Monterrey. Innovación Sustentable. Todos los derechos reservados.</p>
+<p class="">Designed with ❤️ for a Greener Future.</p>
+</div>
+</footer>
+<!-- FAB for WhatsApp -->
+<a class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all flex items-center justify-center" href="http://wa.me/525583335581">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.048a11.827 11.827 0 001.578 5.91L0 24l6.102-1.6a11.777 11.777 0 005.945 1.597h.005c6.637 0 12.048-5.412 12.052-12.049a11.83 11.83 0 00-3.589-8.432z"></path></svg>
+</a>
+<script>
+    // Header transparency on scroll
+    const header = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('nav-scrolled');
+            header.classList.remove('border-transparent');
+        } else {
+            header.classList.remove('nav-scrolled');
+            header.classList.add('border-transparent');
+        }
+    });
+
+    // Simple smooth scroll enhancement
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+
+</body></html>
